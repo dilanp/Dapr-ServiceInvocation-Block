@@ -21,9 +21,14 @@ namespace WeatherMvcFront.Controllers
 
         public async Task<IActionResult> Index()
         {
+            // Logging.
             _logger.LogInformation("Entered the index method.");
+
             var data = await _weatherClient.GetWeather();
+
+            // Logging.
             _logger.LogInformation($"Returning data => {JsonSerializer.Serialize(data)}");
+
             return View(data);
         }
 
