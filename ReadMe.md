@@ -10,20 +10,20 @@ http://localhost:{dapr-http-port}/v1.0/invoke/{app-id}/method/{method-name}
 
 Weather API
 ===========
-dapr run --app-id weatherapi --app-port 5001 --dapr-http-port 50001 dotnet run
-http://localhost:50001/v1.0/invoke/weatherapi/method/weatherforecast
-Invoke-RestMethod -Method Get -Uri 'http://localhost:50001/v1.0/invoke/weatherapi/method/weatherforecast'
+- Command => dapr run --app-id weatherapi --app-port 5001 --dapr-http-port 50001 dotnet run
+- URL => http://localhost:50001/v1.0/invoke/weatherapi/method/weatherforecast
+- Invoke-RestMethod -Method Get -Uri 'http://localhost:50001/v1.0/invoke/weatherapi/method/weatherforecast'
 
 Weather App
 ===========
-dapr run --app-id frontend --app-port 5002 --dapr-http-port 50002 dotnet run
-http://localhost:5002
+- Command => dapr run --app-id frontend --app-port 5002 --dapr-http-port 50002 dotnet run
+- URL => http://localhost:5002
 
 Dapr & Zipkin dashboards
 ========================
-Run the following command and get the URL and open on browser.
-dapr dashboard
-http://localhost:8080/overview
+- Run the following command and get the URL and open it on browser.
+- dapr dashboard
+- http://localhost:8080/overview
 
-Run => docker ps to reveal Zipkin port.
-http://localhost:9411/zipkin/
+- Run => docker ps to reveal Zipkin port.
+- http://localhost:9411/zipkin/
