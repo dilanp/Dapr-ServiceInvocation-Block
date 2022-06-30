@@ -1,8 +1,8 @@
 Initial Steps
 =============
-Update the launchSettings.json files to disable IIS and run as a console app.
-Remove the route in the weather api controller.
-Decorate the weather api method with desired method name.
+- Update the launchSettings.json files to disable IIS and run as a console app.
+- Remove the route in the weather api controller.
+- Decorate the weather api method with desired method name.
 
 The Dapr service endpoint format
 ================================
