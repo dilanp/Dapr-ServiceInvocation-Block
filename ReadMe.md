@@ -6,7 +6,7 @@ Initial Steps
 
 The Dapr service endpoint format
 ================================
-http://localhost:<dapr-http-port>/v1.0/invoke/<app-id>/method/<method-name>
+http://localhost:{dapr-http-port}/v1.0/invoke/{app-id}/method/{method-name}
 
 Weather API
 ===========
